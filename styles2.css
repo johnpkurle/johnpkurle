@@ -1,0 +1,270 @@
+/**
+ * CSS for my professional website
+ */
+
+ h2 {
+    font-size:1.5em;
+ }
+
+ h3 {font-size:1.25em;}
+
+ p {font-size:0.9em;}
+
+ body {
+    background-color: #383838;
+ }
+
+ #header {
+    /*background-color: aqua;*/
+    grid-area: header;
+}
+
+#navbar {
+    /*background-color: aqua;*/
+    grid-area: navbar;
+}
+
+#left {
+    /*background-color: aqua;*/ 
+   grid-area: left;
+}
+
+#center {
+    /*background-color: aqua;*/ 
+    grid-area: center;
+}
+
+#right {
+    /*background-color: aqua;*/ 
+    grid-area: right;
+}
+
+#footer {
+    /*background-color: aqua;*/ 
+    grid-area: footer;
+}
+
+.top {grid-area: top;}
+.bottom {grid-area: bottom;}
+
+
+
+.grid-container > .box {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.grid-container > .grid-container {
+    display: grid;
+    grid-template-areas:
+       'top top'
+       'left right'
+       'bottom bottom';
+    gap: 10px;
+    background-color: #ff0000;
+    padding: 0px;
+    margin: 10px;
+}
+
+#header > .left {
+    float:left;
+    
+    width:25%;
+}
+#header >.left> img {
+    float:left;
+    height: auto;
+    width: 4em;
+    margin-left:10px;
+    margin-bottom:5px;
+}
+#header > .right {
+    width: 75%;
+    display:inline-block;
+    margin:auto;
+    text-align: center;
+}
+.right > .NavBarAllign {
+    margin:auto;
+    height: 2em;
+    line-height: 2em;
+    display:inline;
+    float: right;
+    width: 7em;
+    text-align: center;
+}
+.NavBarText {
+    font-family:'Times New Roman', Times, serif;
+    display: inline;
+    border: none;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 10%;
+    color: #000000;
+    font-weight: 750;
+    background-color: #FFFFFF;
+    font-size: 1.5em;
+  }
+.NavBarText:hover {
+	color: #5d5d5d;
+}
+.dropdown .dropbtn {
+	font-size: 1em;  
+	border: none;
+	outline: none;
+	color: rgb(132, 132, 132);
+	padding: 5% 30px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   float: top;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+}
+
+.dropdown-content a:hover {
+ color: #6c6c6c;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+#header > .center {
+    display: none;
+    width:0%;
+    float:left;
+    text-align: center;
+}
+
+#body-content > img {
+    max-width: 100%;
+}
+
+#left {
+    display: none;
+}
+
+
+/* Mobile only */
+@media only screen and (max-width: 969px) {
+    .sidebar {
+        display: none;
+      /*margin: 0;
+      float: inherit;*/
+    }
+    #header > .right {
+        display:none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'navbar navbar navbar navbar navbar navbar'
+            'center   center center center center center'
+            'footer   footer footer footer footer footer';
+        gap: 10px;
+        background-color: #ffffff;
+        padding: 0px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+    }
+
+    #navbar {
+        display: inline-block;
+    }
+    #navbar > .NavBarAllign {
+        margin:auto;
+        height: 2em;
+        line-height: 2em;
+        display:inline;
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* Desktop only */
+  @media only screen and (min-width: 970px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header'
+            'navbar navbar navbar navbar navbar'
+            'left   center center center right'
+            'footer   footer footer footer footer';
+        gap: 10px;
+        background-color: #ffffff;
+        padding: 0px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 85em;
+    }
+
+
+
+
+    #navbar {
+        display:none;
+    }
+
+    .sidebar {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 1em;
+        width: 10em;
+    }
+    .sidebar > img {
+        max-width: 5em;
+    }
+
+    #center {
+        width:100%;
+    }
+}
+.top {
+    text-align: left;
+}
+
+.sidebar li {
+    float: left;
+}
+
+#footer >ul> li {
+    display: inline-block;
+    margin:auto;
+    width:10%;
+}
+
+#footer img {
+    margin:0%;
+    padding:0%;
+    width: 2em;
+    float: left;
+}
+
+

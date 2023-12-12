@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles2.css">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Landing Page">
+    <meta name="keywords" content="John, Kurle, computer science, cs, intern, internship">
+    <meta name="author" content="Jack Kurle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurlecore</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="main-wrapper">
+    <div class="grid-container">
+        <div id="header" class="box">
+            <div class="left"><img src="images/signature.png" onclick="changeContent('body-content')"></div>
+            <div class="center">John Kurle</div>
+            <div class="right">
+                <div class="NavBarAllign">
+                    <div class="dropdown">
+                        <button class="dropbtn, NavBarText">Projects</button>
+                        <div class="dropdown-content">
+                            <a onclick="changeContentSong('body-content')">Song Searcher</a>
+                            <a onclick="changeContentPath('body-content')">UW Pathfinder</a>
+                            <a onclick="changeContentCNPE('body-content')">CNPE Redesign</a>
+                            <a onclick="changeContentWeb('body-content')">This Website!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="NavBarAllign">
+                    <div class="dropdown">
+                        <button class="dropbtn, NavBarText">Resume</button>
+                        <div class="dropdown-content">
+                            <a onclick="changeContentResume('body-content')">View</a>
+                            <a href="documents/Kurle_Resume.pdf" download="Kurle_Resume.pdf">Download</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="navbar" class="box">
+            <div class="NavBarAllign">
+                <div class="dropdown">
+                    <button class="dropbtn, NavBarText">Projects</button>
+                    <div class="dropdown-content">
+                        <a onclick="changeContentSong('body-content')">Song Searcher</a>
+                        <a onclick="changeContentPath('body-content')">UW Pathfinder</a>
+                        <a onclick="changeContentCNPE('body-content')">CNPE Redesign</a>
+                        <a onclick="changeContentWeb('body-content')">This Website!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="NavBarAllign">
+                <div class="dropdown">
+                    <button class="dropbtn, NavBarText">Resume</button>
+                    <div class="dropdown-content">
+                        <a onclick="changeContentResume('body-content')">View</a>
+                        <a href="documents/Kurle_Resume.pdf" download="Kurle_Resume.pdf">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="left" class="sidebar">
+            <h3>Stuff I'm Doing</h3>
+            <img src="images/bandcamp.png">
+        </div>
+        <div id="center" class="box">
+            <div class="top" id="body-content">
+                <h3>About Me</h3>
+                <p>Hi, I'm John. I'm currently a sophomore CS student at UW
+                    Madison. My favorite thing about programming is being able
+                    to develop unique and efficient software solutions by leveraging
+                    interactions between
+                    data structures. I value creativity and expression,
+                    both inside and out of programming.
+                </p>
+                <p>
+                    My programming journey started when I took a Scratch
+                    class at age 7. I learned about basic programming statements
+                    and conditions, as well as the concept of organizing code into methods
+                    and classes. I belive this exposure to
+                    computer science has translated to a deeper understanding
+                    of concepts that I learn today.
+                </p>
+                <p>
+                    At that point, I became interested in creating with code.
+                    I participated in a Lego League club in elementary school and got experience
+                    with programming physical results. I tinkered with wires and lightbulbs,
+                    and even coded some of my own stages for the game Sumotori Dreams (2007).
+                </p>
+                <p>
+                    In middle and highschool I did not do much programming, but I did assemble
+                    a computer and learn about the different components and what they do. After
+                    highschool I earned credits from a comminity college and worked.
+                </p>
+                <p>
+                    Now, at Madison, I am seeing my preparation pay off. I have been acquiring
+                    CS experience in areas such as JavaFX, hosting a webserver, and using git to integrate
+                    separate frontend and backend. I am excited to put these skills to use and learn new things.
+                </p>
+            </div>
+        </div>
+        <div id="right" class="sidebar">
+            <h3>Stuff I Did</h3>
+            <img src="images/songsearch.png">
+            <button onclick="changeContentSong('body-content')">Song Searcher</button>
+            <img src="images/UWPathfinder.png">
+            <button onclick="changeContentPath('body-content')">Campus Pathfinder</button>
+            <img src="images/ESFCNPE.png">
+            <button onclick="changeContentCNPE('body-content')">ESF CNPE Redesign</button>
+            <img src="images/website.png">
+            <button onclick="changeContentWeb('body-content')">This Website!</button>
+            <h3>Stuff I Like</h3>
+            <ul>
+                <li>Fencing</li>
+                <li>Snowboarding</li>
+                <li>Photography</li>
+            </ul>
+        </div>
+        <div id="footer" class="box">
+            <h5>Contact Me</h5>
+            <ul>
+                <li><a href="/email.html"><img src="images/email.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/john-kurle-4b36a52a3/"><img src="images/linkedin.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
