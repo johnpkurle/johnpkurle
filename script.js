@@ -62,7 +62,7 @@ function changeContentSong(contentId) {
     </p>
     <p>
         Due to CS400 class policy, I am not allowed to share sourcecode from this project.
-        Here is a video demonstrating:
+        
     </p>`
 }
 
@@ -84,7 +84,7 @@ function changeContentPath(contentId) {
     </p>
     <p>
         Due to CS400 class policy, I am not allowed to share sourcecode from this project.
-        Here is a video demonstrating:
+        
     </p>`
 }
 
