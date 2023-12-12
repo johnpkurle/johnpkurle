@@ -192,10 +192,14 @@
         max-width: 40em;
     }
 
+    h3{font-size:1.5rem;}
+    p{font-size:1rem;}
+
     #navbar {
         display: inline-block;
     }
     #navbar > .NavBarAllign {
+        font-size: 1.5rem;
         margin:auto;
         height: 2em;
         line-height: 2em;
